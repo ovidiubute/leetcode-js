@@ -5,7 +5,6 @@
 var isPerfectSquare = function(num) {
   let start = 0;
   let end = num;
-  let mid = null;
 
   while (end >= start) {
     let mid = Math.floor((end + start) / 2);
