@@ -4,7 +4,11 @@ const TOTAL_PROBLEM_COUNT = 932;
 // Count how many solutions we have so far
 const countSolutionsScript =
   "ls solutions | grep -E [0-9]{4}.[a-zA-Z1-9-]*.js | wc -l";
-const solutionCount = require("child_process").execSync(countSolutionsScript);
+const solutionCount = Number(
+  require("child_process")
+    .execSync(countSolutionsScript)
+    .toString()
+);
 
 // Compute our progress
 const progress = Number(
