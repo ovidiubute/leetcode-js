@@ -28,6 +28,6 @@ const output = prettier.format(JSON.stringify(badge), {
 });
 
 // Write shields.io badge data to disk
-require("fs").writeFileSync("./.leetcode.json", output, {
+require("fs").writeFileSync("./.shieldsio.json", output, {
   flag: "w"
 });
