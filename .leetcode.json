@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "label": "progress",
-  "message": "6.67%",
-  "color": "red"
+  "message": "6.76%",
+  "color": "red",
+  "namedLogo": "leetcode"
 }
