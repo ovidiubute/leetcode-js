@@ -8,10 +8,10 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "update-readme": "node ./update-readme.js"
+    "update-badge": "node ./update-badge.js"
   },
   "pre-commit": [
-    "update-readme"
+    "update-badge"
   ],
   "devDependencies": {
     "pre-commit": "^1.2.2",
