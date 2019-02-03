@@ -10,9 +10,6 @@ const solutionCount = Number(
     .toString()
 );
 
-//TEst
-console.log(solutionCount);
-
 // Compute our progress
 const progress = Number(
   ((solutionCount / TOTAL_PROBLEM_COUNT) * 100).toFixed(2)
