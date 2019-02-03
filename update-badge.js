@@ -4,12 +4,21 @@ const TOTAL_PROBLEM_COUNT = 932;
 // Count how many solutions we have so far
 const countSolutionsScript =
   "ls solutions | grep -E [0-9]{4}.[a-zA-Z1-9-]*.js | wc -l";
-const solutionCount = require("child_process").execSync(countSolutionsScript);
+const solutionCount = Number(
+  require("child_process")
+    .execSync(countSolutionsScript)
+    .toString()
+);
+
+//TEst
+console.log(solutionCount);
 
 // Compute our progress
 const progress = Number(
   ((solutionCount / TOTAL_PROBLEM_COUNT) * 100).toFixed(2)
 );
+
+console.log(progress);
 
 // Badge data for shields.io
 const color = progress > 15 ? "yellow" : progress > 30 ? "green" : "red";
