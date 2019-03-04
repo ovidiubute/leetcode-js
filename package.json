@@ -7,14 +7,7 @@
   "author": "Ovidiu Bute <ovidiu.bute@gmail.com>",
   "license": "UNLICENSED",
   "private": true,
-  "scripts": {
-    "update-badge": "node ./update-badge.js"
-  },
-  "pre-commit": [
-    "update-badge"
-  ],
   "devDependencies": {
-    "pre-commit": "^1.2.2",
     "prettier": "^1.16.3"
   }
 }
