@@ -14,8 +14,6 @@ const progress = Number(
   ((solutionCount / TOTAL_PROBLEM_COUNT) * 100).toFixed(2)
 );
 
-console.log(progress);
-
 // Badge data for shields.io
 const color = progress > 15 ? "yellow" : progress > 30 ? "green" : "red";
 const badge = {
