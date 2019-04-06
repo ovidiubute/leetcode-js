@@ -8,6 +8,6 @@
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
-    "prettier": "1.16.3"
+    "prettier": "1.16.4"
   }
 }
