@@ -11,16 +11,8 @@ var filterRestaurants = function(
   maxPrice,
   maxDistance
 ) {
-  let rests = restaurants;
-
-  if (veganFriendly) {
-    rests = restaurants.filter(r => {
-      return Boolean(r[2]);
-    });
-  }
-
-  rests = rests.filter(r => {
-    return r[3] <= maxPrice && r[4] <= maxDistance;
+  const rests = restaurants.filter(r => {
+    return (!veganFriendly || r[2]) && r[3] <= maxPrice && r[4] <= maxDistance;
   });
 
   rests.sort((a, b) => {
