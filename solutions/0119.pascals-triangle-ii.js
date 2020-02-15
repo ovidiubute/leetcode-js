@@ -18,9 +18,9 @@ var getRow = function(rowIndex) {
 const memo = {};
 
 const combinations = function(n, k) {
-  let nFact = memo[n] ? memo[n] : fact(n);
-  let kFact = memo[k] ? memo[k] : fact(k);
-  let nkFact = memo[n - k] ? memo[n - k] : fact(n - k);
+  let nFact = memo[n] || fact(n);
+  let kFact = memo[k] || fact(k);
+  let nkFact = memo[n - k] || fact(n - k);
 
   return nFact / (kFact * nkFact);
 };
