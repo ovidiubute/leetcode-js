@@ -9,8 +9,11 @@ var balancedStringSplit = function(s) {
     i = 0;
 
   while (i <= s.length) {
-    if (s.charAt(i) === "L") lcount++;
-    else rcount++;
+    if (s.charAt(i) === "L") {
+      lcount++;
+    } else {
+      rcount++;
+    }
     i++;
 
     if (lcount === rcount) {
