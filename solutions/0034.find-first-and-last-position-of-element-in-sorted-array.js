@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number[]}
  */
-var searchRange = function(nums, target) {
+var searchRange = function (nums, target) {
   let firstMatch = binarySearch(nums, 0, nums.length - 1, target);
 
   if (firstMatch === -1) return [-1, -1];
@@ -20,7 +20,7 @@ var searchRange = function(nums, target) {
   return [i, j];
 };
 
-const binarySearch = function(nums, left, right, target) {
+const binarySearch = function (nums, left, right, target) {
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
     if (nums[mid] === target) {

@@ -2,7 +2,7 @@
  * @param {number} x
  * @return {number}
  */
-var reverse = function(x) {
+var reverse = function (x) {
   let temp = Math.abs(x);
   let rev = 0;
 

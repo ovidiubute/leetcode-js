@@ -3,11 +3,11 @@
  * @param {string} T
  * @return {boolean}
  */
-var backspaceCompare = function(S, T) {
+var backspaceCompare = function (S, T) {
   return typed(S) === typed(T);
 };
 
-var typed = function(S) {
+var typed = function (S) {
   const stack = [];
   for (let i = 0; i < S.length; i++) {
     if (S.charAt(i) === "#") stack.pop();

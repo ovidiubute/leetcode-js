@@ -4,10 +4,10 @@
  * @param {number} small
  */
 var ParkingSystem = function (big, medium, small) {
-  this.storage = [big, medium, small]
+  this.storage = [big, medium, small];
 };
 
-/** 
+/**
  * @param {number} carType
  * @return {boolean}
  */

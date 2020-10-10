@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var rob = function(nums) {
+var rob = function (nums) {
   if (nums.length === 0) {
     return 0;
   }

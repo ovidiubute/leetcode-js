@@ -2,7 +2,7 @@
  * @param {number} n - a positive integer
  * @return {number}
  */
-var hammingWeight = function(n) {
+var hammingWeight = function (n) {
   let bits = 0;
   let mask = 1;
 

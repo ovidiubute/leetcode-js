@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string}
  */
-var reverseWords = function(s) {
+var reverseWords = function (s) {
   const input = s.split(" ");
 
   if (input.length === 1) {

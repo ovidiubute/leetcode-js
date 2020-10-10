@@ -2,7 +2,7 @@
  * @param {string[]} ops
  * @return {number}
  */
-var calPoints = function(ops) {
+var calPoints = function (ops) {
   const scores = [];
 
   for (let i = 0; i < ops.length; i++) {

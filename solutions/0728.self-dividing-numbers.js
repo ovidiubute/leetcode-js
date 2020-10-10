@@ -3,7 +3,7 @@
  * @param {number} right
  * @return {number[]}
  */
-var selfDividingNumbers = function(left, right) {
+var selfDividingNumbers = function (left, right) {
   const results = [];
 
   for (let x = left; x <= right; x++) {

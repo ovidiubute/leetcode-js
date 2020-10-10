@@ -12,7 +12,7 @@ var numberOfSteps = function (num) {
       num -= 1;
     }
 
-    count++
+    count++;
   }
 
   return count;

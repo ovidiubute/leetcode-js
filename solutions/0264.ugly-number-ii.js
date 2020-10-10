@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  */
-var nthUglyNumber = function(n) {
+var nthUglyNumber = function (n) {
   const nums = [1];
 
   let ugly,

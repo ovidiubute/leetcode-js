@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  */
-var countPrimes = function(n) {
+var countPrimes = function (n) {
   let count = 0;
 
   for (let i = 2; i < n; i++) {
@@ -12,7 +12,7 @@ var countPrimes = function(n) {
   return count;
 };
 
-var isPrime = function(x, memo) {
+var isPrime = function (x, memo) {
   const sqrt = Math.floor(Math.sqrt(x));
   for (let i = 2; i <= sqrt; i++) {
     if (x % i === 0) {

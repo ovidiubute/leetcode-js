@@ -10,11 +10,11 @@
  * @param {TreeNode} t
  * @return {boolean}
  */
-var isSubtree = function(s, t) {
+var isSubtree = function (s, t) {
   return dfs(s, "left").indexOf(dfs(t, "left")) !== -1;
 };
 
-var dfs = function(node, side) {
+var dfs = function (node, side) {
   if (node === null) {
     if (side === "left") {
       return "leftNull";

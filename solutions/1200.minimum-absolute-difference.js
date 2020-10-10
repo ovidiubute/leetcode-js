@@ -2,7 +2,7 @@
  * @param {number[]} arr
  * @return {number[][]}
  */
-var minimumAbsDifference = function(arr) {
+var minimumAbsDifference = function (arr) {
   arr.sort((a, b) => {
     return a > b ? 1 : -1;
   });

@@ -3,7 +3,7 @@
  * @param {string} abbr
  * @return {boolean}
  */
-var validWordAbbreviation = function(word, abbr) {
+var validWordAbbreviation = function (word, abbr) {
   if (abbr.length > word.length) {
     return false;
   }

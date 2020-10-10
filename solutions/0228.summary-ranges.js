@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {string[]}
  */
-var summaryRanges = function(nums) {
+var summaryRanges = function (nums) {
   if (!nums.length) {
     return [];
   }

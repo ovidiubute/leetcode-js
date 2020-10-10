@@ -9,11 +9,11 @@
  * @param {TreeNode} root
  * @return {boolean}
  */
-var isSymmetric = function(root) {
+var isSymmetric = function (root) {
   return isMirror(root, root);
 };
 
-var isMirror = function(t1, t2) {
+var isMirror = function (t1, t2) {
   if (t1 === null && t2 === null) {
     return true;
   }

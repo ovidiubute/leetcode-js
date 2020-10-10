@@ -2,7 +2,7 @@
  * @param {character[][]} grid
  * @return {number}
  */
-var maxKilledEnemies = function(grid) {
+var maxKilledEnemies = function (grid) {
   let max = 0;
 
   for (let i = 0; i < grid.length; i++) {

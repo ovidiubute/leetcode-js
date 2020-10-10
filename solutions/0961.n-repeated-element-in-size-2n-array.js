@@ -2,7 +2,7 @@
  * @param {number[]} A
  * @return {number}
  */
-var repeatedNTimes = function(A) {
+var repeatedNTimes = function (A) {
   A.sort();
 
   for (let i = 1; i < A.length; i++) {

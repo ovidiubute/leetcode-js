@@ -1,7 +1,7 @@
 /**
  * Initialize your data structure here.
  */
-var Twitter = function() {
+var Twitter = function () {
   this.followersByUser = new Map();
   this.tweetsByUser = new Map();
 
@@ -16,7 +16,7 @@ var Twitter = function() {
  * @param {number} tweetId
  * @return {void}
  */
-Twitter.prototype.postTweet = function(userId, tweetId) {
+Twitter.prototype.postTweet = function (userId, tweetId) {
   let tweets;
   if (this.tweetsByUser.has(userId)) {
     tweets = this.tweetsByUser.get(userId);
@@ -33,7 +33,7 @@ Twitter.prototype.postTweet = function(userId, tweetId) {
  * @param {number} userId
  * @return {number[]}
  */
-Twitter.prototype.getNewsFeed = function(userId) {
+Twitter.prototype.getNewsFeed = function (userId) {
   let users = [userId];
 
   if (this.followersByUser.has(userId)) {
@@ -53,7 +53,7 @@ Twitter.prototype.getNewsFeed = function(userId) {
     for (let [ts, tweetId] of userTweets) {
       tweets.push({
         ts,
-        tweetId
+        tweetId,
       });
     }
   }
@@ -68,7 +68,7 @@ Twitter.prototype.getNewsFeed = function(userId) {
     return 0;
   });
 
-  return tweets.map(t => t.tweetId).slice(0, 10);
+  return tweets.map((t) => t.tweetId).slice(0, 10);
 };
 
 /**
@@ -77,7 +77,7 @@ Twitter.prototype.getNewsFeed = function(userId) {
  * @param {number} followeeId
  * @return {void}
  */
-Twitter.prototype.follow = function(followerId, followeeId) {
+Twitter.prototype.follow = function (followerId, followeeId) {
   if (followerId === followeeId) {
     return;
   }
@@ -95,7 +95,7 @@ Twitter.prototype.follow = function(followerId, followeeId) {
  * @param {number} followeeId
  * @return {void}
  */
-Twitter.prototype.unfollow = function(followerId, followeeId) {
+Twitter.prototype.unfollow = function (followerId, followeeId) {
   if (this.followersByUser.has(followerId)) {
     const followers = this.followersByUser.get(followerId);
     followers.delete(followeeId);

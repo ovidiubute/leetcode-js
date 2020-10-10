@@ -2,7 +2,7 @@
  * @param {number[][]} triangle
  * @return {number}
  */
-var minimumTotal = function(triangle) {
+var minimumTotal = function (triangle) {
   if (!triangle.length) return 0;
 
   let dp = new Array(triangle.length);

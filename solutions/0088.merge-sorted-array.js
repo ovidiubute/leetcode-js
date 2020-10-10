@@ -5,7 +5,7 @@
  * @param {number} n
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
-var merge = function(nums1, m, nums2, n) {
+var merge = function (nums1, m, nums2, n) {
   if (nums1 === null || nums2 === null || n === 0) {
     return;
   }

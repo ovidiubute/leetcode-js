@@ -3,7 +3,7 @@
  * @param {number} B
  * @return {string}
  */
-var strWithout3a3b = function(A, B) {
+var strWithout3a3b = function (A, B) {
   let result = [];
 
   while (A || B) {

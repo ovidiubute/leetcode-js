@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number}
  */
-var search = function(reader, target) {
+var search = function (reader, target) {
   let i = 0;
 
   while (reader.get(i) !== 2147483647) {

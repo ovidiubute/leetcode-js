@@ -2,7 +2,7 @@
  * @param {string[]} words
  * @return {number}
  */
-var uniqueMorseRepresentations = function(words) {
+var uniqueMorseRepresentations = function (words) {
   const morse = [
     ".-",
     "-...",
@@ -29,12 +29,12 @@ var uniqueMorseRepresentations = function(words) {
     ".--",
     "-..-",
     "-.--",
-    "--.."
+    "--..",
   ];
   const occurences = {};
   for (let i = 0; i < words.length; i++) {
     let m = Array.prototype.map
-      .call(words[i], c => morse[c.charCodeAt(0) - 97])
+      .call(words[i], (c) => morse[c.charCodeAt(0) - 97])
       .join("");
     if (occurences[m] !== undefined) {
       occurences[m]++;

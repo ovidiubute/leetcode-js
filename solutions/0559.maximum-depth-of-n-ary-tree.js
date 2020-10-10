@@ -9,7 +9,7 @@
  * @param {Node} root
  * @return {number}
  */
-var maxDepth = function(root) {
+var maxDepth = function (root) {
   if (root === null) {
     return 0;
   } else if (root.children.length === 0) {

@@ -10,18 +10,18 @@
  * @param {number} k
  * @return {ListNode}
  */
-var rotateRight = function(head, k) {
+var rotateRight = function (head, k) {
   if (head === null) {
     return null;
   }
-  
+
   if (head.next === null) {
     return head;
   }
-  
+
   let t = new ListNode(null);
   t.next = head;
-  
+
   let count = 0;
   let p = t.next;
   while (p) {
@@ -33,7 +33,7 @@ var rotateRight = function(head, k) {
   if (count < q) {
     q = k % count;
   }
-  
+
   while (q) {
     let p = t.next;
     while (p.next.next) {
@@ -43,9 +43,9 @@ var rotateRight = function(head, k) {
     p.next.next = t.next;
     t.next = p.next;
     p.next = null;
-    
+
     q--;
   }
-  
+
   return t.next;
 };

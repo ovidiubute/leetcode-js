@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var findPeakElement = function(nums) {
+var findPeakElement = function (nums) {
   if (nums.length === 1) {
     return 0;
   }

@@ -4,7 +4,7 @@
  * @param {string[][]} similarPairs
  * @return {boolean}
  */
-var areSentencesSimilar = function(sentence1, sentence2, similarPairs) {
+var areSentencesSimilar = function (sentence1, sentence2, similarPairs) {
   if (sentence1.length !== sentence2.length) {
     return false;
   }

@@ -3,7 +3,7 @@
  * @param {string} t
  * @return {character}
  */
-var findTheDifference = function(s, t) {
+var findTheDifference = function (s, t) {
   let sumS = 0;
   let sumT = 0;
 

@@ -2,7 +2,7 @@
  * @param {string} S
  * @return {number[]}
  */
-var diStringMatch = function(S) {
+var diStringMatch = function (S) {
   const result = [];
   let lo = 0,
     hi = S.length;

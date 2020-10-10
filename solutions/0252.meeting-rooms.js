@@ -9,7 +9,7 @@
  * @param {Interval[]} intervals
  * @return {boolean}
  */
-var canAttendMeetings = function(intervals) {
+var canAttendMeetings = function (intervals) {
   intervals.sort((a, b) => {
     return a.start - b.start;
   });

@@ -2,7 +2,7 @@
  * @param {number} num
  * @return {boolean}
  */
-var isPowerOfFour = function(num) {
+var isPowerOfFour = function (num) {
   while (num !== 1 && Math.floor(num) !== 0) {
     num /= 4;
   }

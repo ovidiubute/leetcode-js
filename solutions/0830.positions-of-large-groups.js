@@ -2,7 +2,7 @@
  * @param {string} S
  * @return {number[][]}
  */
-var largeGroupPositions = function(S) {
+var largeGroupPositions = function (S) {
   const out = [];
   let prev = "",
     count = 0,

@@ -40,11 +40,11 @@
  * @param {NestedInteger[]} nestedList
  * @return {number}
  */
-var depthSum = function(nestedList) {
+var depthSum = function (nestedList) {
   return d(nestedList, 1);
 };
 
-var d = function(nestedList, depth) {
+var d = function (nestedList, depth) {
   let s = 0;
 
   for (let n of nestedList) {

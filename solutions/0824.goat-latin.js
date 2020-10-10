@@ -2,7 +2,7 @@
  * @param {string} S
  * @return {string}
  */
-var toGoatLatin = function(S) {
+var toGoatLatin = function (S) {
   const vowels = ["a", "e", "i", "o", "u"];
   const arr = S.split(" ");
   for (let i = 0; i < arr.length; i++) {

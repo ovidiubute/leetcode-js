@@ -2,7 +2,7 @@
  * @param {number[]} A
  * @return {boolean}
  */
-var isMonotonic = function(A) {
+var isMonotonic = function (A) {
   if (A.length < 3) {
     return true;
   }
@@ -10,7 +10,7 @@ var isMonotonic = function(A) {
   return isIncreasing(A) || isDecreasing(A);
 };
 
-var isIncreasing = function(A) {
+var isIncreasing = function (A) {
   for (let i = 1; i < A.length; i++) {
     if (A[i - 1] > A[i]) {
       return false;
@@ -19,7 +19,7 @@ var isIncreasing = function(A) {
   return true;
 };
 
-var isDecreasing = function(A) {
+var isDecreasing = function (A) {
   for (let i = 1; i < A.length; i++) {
     if (A[i - 1] < A[i]) {
       return false;

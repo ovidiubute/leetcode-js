@@ -3,7 +3,7 @@
  * @param {number} K
  * @return {string}
  */
-var licenseKeyFormatting = function(S, K) {
+var licenseKeyFormatting = function (S, K) {
   const out = [];
 
   for (let i = S.length - 1, rem = K + 1; i >= 0; i--) {

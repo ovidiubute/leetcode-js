@@ -2,7 +2,7 @@
  * @param {number[][]} coordinates
  * @return {boolean}
  */
-var checkStraightLine = function(coordinates) {
+var checkStraightLine = function (coordinates) {
   if (coordinates.length < 3) {
     return true;
   }
@@ -27,6 +27,6 @@ var checkStraightLine = function(coordinates) {
   return true;
 };
 
-const slope = function(x1, y1, x2, y2) {
+const slope = function (x1, y1, x2, y2) {
   return (y2 - y1) / (x2 - x1);
 };

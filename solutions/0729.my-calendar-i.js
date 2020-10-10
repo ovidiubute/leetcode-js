@@ -1,4 +1,4 @@
-var MyCalendar = function() {
+var MyCalendar = function () {
   this.data = [];
 };
 
@@ -7,7 +7,7 @@ var MyCalendar = function() {
  * @param {number} end
  * @return {boolean}
  */
-MyCalendar.prototype.book = function(start, end) {
+MyCalendar.prototype.book = function (start, end) {
   for (let i = 0; i < this.data.length; i++) {
     if (this.data[i][0] < end && start < this.data[i][1]) {
       return false;

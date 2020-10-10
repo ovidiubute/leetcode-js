@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function(numbers, target) {
+var twoSum = function (numbers, target) {
   const positions = {};
   for (let i = 0; i < numbers.length; i++) {
     if (positions[numbers[i]] === undefined) {

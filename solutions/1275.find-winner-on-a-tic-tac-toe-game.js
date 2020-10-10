@@ -2,8 +2,12 @@
  * @param {number[][]} moves
  * @return {string}
  */
-var tictactoe = function(moves) {
-  const grid = [[null, null, null], [null, null, null], [null, null, null]];
+var tictactoe = function (moves) {
+  const grid = [
+    [null, null, null],
+    [null, null, null],
+    [null, null, null],
+  ];
   for (let i = 0; i < moves.length; i++) {
     grid[moves[i][0]][moves[i][1]] = i % 2 === 0 ? "X" : "O";
   }

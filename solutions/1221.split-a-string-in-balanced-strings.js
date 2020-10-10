@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var balancedStringSplit = function(s) {
+var balancedStringSplit = function (s) {
   let strings = 0,
     lcount = 0,
     rcount = 0,

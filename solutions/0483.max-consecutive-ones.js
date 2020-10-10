@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var findMaxConsecutiveOnes = function(nums) {
+var findMaxConsecutiveOnes = function (nums) {
   let max = 0;
   let localMax = 0;
   for (let i = 0; i < nums.length; i++) {

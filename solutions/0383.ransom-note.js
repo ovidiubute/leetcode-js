@@ -3,7 +3,7 @@
  * @param {string} magazine
  * @return {boolean}
  */
-var canConstruct = function(ransomNote, magazine) {
+var canConstruct = function (ransomNote, magazine) {
   const letterRegistry = {};
 
   for (let i = 0; i < magazine.length; i++) {

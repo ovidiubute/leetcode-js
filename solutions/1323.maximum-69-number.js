@@ -2,7 +2,7 @@
  * @param {number} num
  * @return {number}
  */
-var maximum69Number = function(num) {
+var maximum69Number = function (num) {
   const s = String(num);
 
   for (let i = 0; i < s.length; i++) {

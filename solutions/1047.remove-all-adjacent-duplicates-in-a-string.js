@@ -2,7 +2,7 @@
  * @param {string} S
  * @return {string}
  */
-var removeDuplicates = function(S) {
+var removeDuplicates = function (S) {
   const stack = [];
 
   for (let i = 0; i < S.length; i++) {

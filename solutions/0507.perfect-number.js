@@ -2,7 +2,7 @@
  * @param {number} num
  * @return {boolean}
  */
-var checkPerfectNumber = function(num) {
+var checkPerfectNumber = function (num) {
   if (num === 0) return false;
 
   let sum = 0;

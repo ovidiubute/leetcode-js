@@ -3,7 +3,7 @@
  * @param {number[]} nums2
  * @return {number[]}
  */
-var intersect = function(nums1, nums2) {
+var intersect = function (nums1, nums2) {
   const nums1Seen = {};
   const nums2Seen = {};
 

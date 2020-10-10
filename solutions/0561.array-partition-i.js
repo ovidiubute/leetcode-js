@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var arrayPairSum = function(nums) {
+var arrayPairSum = function (nums) {
   nums.sort((a, b) => {
     return a > b ? 1 : a < b ? -1 : 0;
   });

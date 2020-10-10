@@ -3,7 +3,7 @@
  * @param {number[]} nums2
  * @return {number[]}
  */
-var intersection = function(nums1, nums2) {
+var intersection = function (nums1, nums2) {
   const nums = nums1.length > nums2.length ? nums2 : nums1;
   const uset = new Set(nums);
 

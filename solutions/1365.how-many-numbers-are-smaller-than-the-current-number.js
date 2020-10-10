@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-var smallerNumbersThanCurrent = function(nums) {
+var smallerNumbersThanCurrent = function (nums) {
   const out = [];
 
   for (let i = 0; i < nums.length; i++) {

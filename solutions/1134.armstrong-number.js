@@ -2,7 +2,7 @@
  * @param {number} N
  * @return {boolean}
  */
-var isArmstrong = function(N) {
+var isArmstrong = function (N) {
   let result = 0;
   let c = N;
   const digits = [];

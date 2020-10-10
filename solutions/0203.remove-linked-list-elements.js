@@ -10,7 +10,7 @@
  * @param {number} val
  * @return {ListNode}
  */
-var removeElements = function(head, val) {
+var removeElements = function (head, val) {
   var helper = new ListNode(0);
   helper.next = head;
   var p = helper;

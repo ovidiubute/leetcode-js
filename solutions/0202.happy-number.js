@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {boolean}
  */
-var isHappy = function(n) {
+var isHappy = function (n) {
   let counter = 0;
 
   do {
@@ -18,7 +18,7 @@ var isHappy = function(n) {
   return true;
 };
 
-const squareDigitsSum = function(x) {
+const squareDigitsSum = function (x) {
   let s = 0;
 
   while (x) {

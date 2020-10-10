@@ -3,7 +3,7 @@
  * @param {string} t
  * @return {boolean}
  */
-var isAnagram = function(s, t) {
+var isAnagram = function (s, t) {
   let x = s.split("");
   x.sort();
 

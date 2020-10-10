@@ -3,7 +3,7 @@
  * @param {number[][]} trust
  * @return {number}
  */
-var findJudge = function(N, trust) {
+var findJudge = function (N, trust) {
   const votes = new Array(N);
   for (let i = 0; i < votes.length; i++) {
     votes[i] = 0;

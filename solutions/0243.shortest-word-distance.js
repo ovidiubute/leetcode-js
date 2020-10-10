@@ -4,10 +4,10 @@
  * @param {string} word2
  * @return {number}
  */
-var shortestDistance = function(words, word1, word2) {
+var shortestDistance = function (words, word1, word2) {
   const positions = {
     [word1]: [],
-    [word2]: []
+    [word2]: [],
   };
 
   for (let i = 0; i < words.length; i++) {

@@ -2,7 +2,7 @@
  * @param {number[]} T
  * @return {number[]}
  */
-var dailyTemperatures = function(T) {
+var dailyTemperatures = function (T) {
   const out = [];
   for (let i = 0; i < T.length; i++) {
     let j = i + 1;

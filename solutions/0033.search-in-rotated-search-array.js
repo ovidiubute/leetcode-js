@@ -3,8 +3,8 @@
  * @param {number} target
  * @return {number}
  */
-var search = function(nums, target) {
-  const findRotateIndex = function(left, right) {
+var search = function (nums, target) {
+  const findRotateIndex = function (left, right) {
     if (nums[left] < nums[right]) {
       return 0;
     }
@@ -25,7 +25,7 @@ var search = function(nums, target) {
     return 0;
   };
 
-  const binarySearch = function(left, right) {
+  const binarySearch = function (left, right) {
     while (left <= right) {
       const pivot = Math.floor((left + right) / 2);
       if (nums[pivot] === target) {

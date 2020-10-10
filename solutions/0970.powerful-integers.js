@@ -4,7 +4,7 @@
  * @param {number} bound
  * @return {number[]}
  */
-var powerfulIntegers = function(x, y, bound) {
+var powerfulIntegers = function (x, y, bound) {
   const out = new Set();
 
   for (let i = 0; i < 20 && x ** i <= bound; i++) {

@@ -1,7 +1,7 @@
 /**
  * Initialize your data structure here.
  */
-var Logger = function() {
+var Logger = function () {
   this.history = {};
 };
 
@@ -13,7 +13,7 @@ var Logger = function() {
  * @param {string} message
  * @return {boolean}
  */
-Logger.prototype.shouldPrintMessage = function(timestamp, message) {
+Logger.prototype.shouldPrintMessage = function (timestamp, message) {
   if (this.history[message] === undefined) {
     this.history[message] = timestamp;
 

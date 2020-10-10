@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string}
  */
-var reverseString = function(s) {
+var reverseString = function (s) {
   // This is correct, but on large inputs you exceed
   // the maximum call stack size, so it was not accepted.
   // if (s === '') {

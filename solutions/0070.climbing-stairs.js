@@ -2,12 +2,12 @@
  * @param {number} n
  * @return {number}
  */
-var climbStairs = function(n) {
+var climbStairs = function (n) {
   let memo = [];
   return steps(0, n, memo);
 };
 
-var steps = function(i, n, memo) {
+var steps = function (i, n, memo) {
   if (i > n) return 0;
 
   if (i === n) return 1;

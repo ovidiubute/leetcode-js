@@ -2,7 +2,7 @@
  * @param {string} str
  * @return {string}
  */
-var toLowerCase = function(str) {
+var toLowerCase = function (str) {
   let result = "";
   for (let c of str) {
     let code = c.charCodeAt(0);

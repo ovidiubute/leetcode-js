@@ -1,4 +1,4 @@
-var isValid = function(x) {
+var isValid = function (x) {
   let ok = false;
   do {
     let c = x % 10;
@@ -23,7 +23,7 @@ var isValid = function(x) {
  * @param {number} N
  * @return {number}
  */
-var rotatedDigits = function(N) {
+var rotatedDigits = function (N) {
   let count = 0;
   for (let i = 2; i <= N; i++) {
     if (isValid(i)) {

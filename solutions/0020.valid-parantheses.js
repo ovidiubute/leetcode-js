@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {boolean}
  */
-var isValid = function(s) {
+var isValid = function (s) {
   var stack = [];
   for (var i = 0; i < s.length; i++) {
     if (s[i] == "(" || s[i] == "[" || s[i] == "{") {

@@ -2,8 +2,8 @@
  * @param {number[]} arr
  * @return {boolean}
  */
-var checkIfExist = function(arr) {
-  const d = arr.map(x => x * 2);
+var checkIfExist = function (arr) {
+  const d = arr.map((x) => x * 2);
 
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < d.length; j++) {

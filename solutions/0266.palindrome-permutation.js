@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {boolean}
  */
-var canPermutePalindrome = function(s) {
+var canPermutePalindrome = function (s) {
   const o = {};
 
   for (let i = 0; i < s.length; i++) {

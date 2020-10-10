@@ -3,7 +3,7 @@
  * @param {number[][]} bikes
  * @return {number[]}
  */
-var assignBikes = function(workers, bikes) {
+var assignBikes = function (workers, bikes) {
   const workerBikeDistances = [];
 
   for (let i = 0; i < bikes.length; i++) {
@@ -11,7 +11,7 @@ var assignBikes = function(workers, bikes) {
       workerBikeDistances.push({
         w: j,
         b: i,
-        distance: dist(bikes[i], workers[j])
+        distance: dist(bikes[i], workers[j]),
       });
     }
   }
@@ -63,6 +63,6 @@ var assignBikes = function(workers, bikes) {
   return ans;
 };
 
-const dist = function(p1, p2) {
+const dist = function (p1, p2) {
   return Math.abs(p1[0] - p2[0]) + Math.abs(p1[1] - p2[1]);
 };

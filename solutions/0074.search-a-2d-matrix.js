@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {boolean}
  */
-var searchMatrix = function(matrix, target) {
+var searchMatrix = function (matrix, target) {
   let arr = [];
   for (let i = 0; i < matrix.length; i++) {
     arr = arr.concat(matrix[i]);

@@ -2,7 +2,7 @@
  * @param {number} numRows
  * @return {number[][]}
  */
-var generate = function(numRows) {
+var generate = function (numRows) {
   const out = [];
   for (let i = 0; i < numRows; i++) {
     out[i] = [1];

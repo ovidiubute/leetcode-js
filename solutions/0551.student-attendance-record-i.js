@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {boolean}
  */
-var checkRecord = function(s) {
+var checkRecord = function (s) {
   let absences = 0;
   let lastLate = Number.MIN_SAFE_INTEGER;
   let prevLastLate = Number.MIN_SAFE_INTEGER;

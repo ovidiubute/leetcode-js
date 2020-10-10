@@ -2,7 +2,7 @@
  * @param {number[]} prices
  * @return {number}
  */
-var maxProfit = function(prices) {
+var maxProfit = function (prices) {
   var min = Math.pow(2, 63);
   var max_profit = 0;
 

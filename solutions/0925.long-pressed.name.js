@@ -3,7 +3,7 @@
  * @param {string} typed
  * @return {boolean}
  */
-var isLongPressedName = function(name, typed) {
+var isLongPressedName = function (name, typed) {
   let i = 0,
     j = 0;
   while (i < name.length) {

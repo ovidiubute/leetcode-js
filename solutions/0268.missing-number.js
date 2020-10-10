@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var missingNumber = function(nums) {
+var missingNumber = function (nums) {
   var min = 0;
   var s = 0;
   for (var i = 0; i < nums.length; i++) {

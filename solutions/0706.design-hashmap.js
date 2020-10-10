@@ -1,7 +1,7 @@
 /**
  * Initialize your data structure here.
  */
-var MyHashMap = function() {
+var MyHashMap = function () {
   this.size = 1543;
   this.map = new Array(this.size);
 
@@ -16,7 +16,7 @@ var MyHashMap = function() {
  * @param {number} value
  * @return {void}
  */
-MyHashMap.prototype.put = function(key, value) {
+MyHashMap.prototype.put = function (key, value) {
   const hashKey = key % this.size;
   const item = this.search(hashKey, key);
 
@@ -27,7 +27,7 @@ MyHashMap.prototype.put = function(key, value) {
   }
 };
 
-MyHashMap.prototype.search = function(hashKey, key) {
+MyHashMap.prototype.search = function (hashKey, key) {
   const bucket = this.map[hashKey];
 
   for (let i = 0; i < bucket.length; i++) {
@@ -44,7 +44,7 @@ MyHashMap.prototype.search = function(hashKey, key) {
  * @param {number} key
  * @return {number}
  */
-MyHashMap.prototype.get = function(key) {
+MyHashMap.prototype.get = function (key) {
   const item = this.search(key % this.size, key);
 
   if (item === -1) return -1;
@@ -57,7 +57,7 @@ MyHashMap.prototype.get = function(key) {
  * @param {number} key
  * @return {void}
  */
-MyHashMap.prototype.remove = function(key) {
+MyHashMap.prototype.remove = function (key) {
   const hashKey = key % this.size;
 
   const bucket = this.map[hashKey];

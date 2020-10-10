@@ -3,16 +3,16 @@
  * @param {string[]} banned
  * @return {string}
  */
-var mostCommonWord = function(paragraph, banned) {
+var mostCommonWord = function (paragraph, banned) {
   var wordCounts = {};
   var maxWord;
   var maxCount = 0;
 
   paragraph
     .split(/[!?',;.\ ]/gi)
-    .filter(w => w != "")
-    .map(w => w.toLowerCase())
-    .forEach(word => {
+    .filter((w) => w != "")
+    .map((w) => w.toLowerCase())
+    .forEach((word) => {
       if (banned.includes(word)) {
         return;
       }

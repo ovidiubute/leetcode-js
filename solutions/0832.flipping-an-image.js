@@ -2,8 +2,8 @@
  * @param {number[][]} A
  * @return {number[][]}
  */
-var flipAndInvertImage = function(A) {
-  var reverse = function(row) {
+var flipAndInvertImage = function (A) {
+  var reverse = function (row) {
     let start = 0;
     let end = row.length - 1;
     const x = new Array(row.length);
@@ -24,7 +24,7 @@ var flipAndInvertImage = function(A) {
     return x;
   };
 
-  var flip = function(row) {
+  var flip = function (row) {
     const x = [];
     for (let i = 0; i < row.length; i++) {
       x[i] = row[i] === 0 ? 1 : 0;

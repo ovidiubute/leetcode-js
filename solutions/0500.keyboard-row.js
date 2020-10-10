@@ -2,11 +2,11 @@
  * @param {string[]} words
  * @return {string[]}
  */
-var findWords = function(words) {
+var findWords = function (words) {
   const rows = [
     ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
     ["a", "s", "d", "f", "g", "h", "j", "k", "l"],
-    ["z", "x", "c", "v", "b", "n", "m"]
+    ["z", "x", "c", "v", "b", "n", "m"],
   ];
   const out = [];
 

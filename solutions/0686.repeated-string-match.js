@@ -3,7 +3,7 @@
  * @param {string} B
  * @return {number}
  */
-var repeatedStringMatch = function(A, B) {
+var repeatedStringMatch = function (A, B) {
   let i = 0;
   let S = "";
   while (S.length < 10000 && S.indexOf(B) === -1) {

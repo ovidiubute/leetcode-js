@@ -3,7 +3,7 @@
  * @param {string} word
  * @return {number}
  */
-var calculateTime = function(keyboard, word) {
+var calculateTime = function (keyboard, word) {
   let time = 0;
 
   if (word === "") return time;

@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var findMaxAverage = function(nums, k) {
+var findMaxAverage = function (nums, k) {
   let max = -Number.MAX_SAFE_INTEGER;
 
   let i = 0,

@@ -4,7 +4,7 @@
  * @param {number} year
  * @return {string}
  */
-var dayOfTheWeek = function(day, month, year) {
+var dayOfTheWeek = function (day, month, year) {
   const weekdays = [
     "Sunday",
     "Monday",
@@ -12,7 +12,7 @@ var dayOfTheWeek = function(day, month, year) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
   ];
 
   return weekdays[new Date(year, month - 1, day).getDay()];

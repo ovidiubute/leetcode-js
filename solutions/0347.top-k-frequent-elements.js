@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number[]}
  */
-var topKFrequent = function(nums, k) {
+var topKFrequent = function (nums, k) {
   const freq = new Map();
 
   for (let i = 0; i < nums.length; i++) {

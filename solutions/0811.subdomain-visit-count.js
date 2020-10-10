@@ -2,7 +2,7 @@
  * @param {string[]} cpdomains
  * @return {string[]}
  */
-var subdomainVisits = function(cpdomains) {
+var subdomainVisits = function (cpdomains) {
   const domainVisits = {};
 
   for (const cpdomain of Object.values(cpdomains)) {
@@ -21,5 +21,5 @@ var subdomainVisits = function(cpdomains) {
     }
   }
 
-  return Object.keys(domainVisits).map(d => `${domainVisits[d]} ${d}`);
+  return Object.keys(domainVisits).map((d) => `${domainVisits[d]} ${d}`);
 };

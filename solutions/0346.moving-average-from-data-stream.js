@@ -2,7 +2,7 @@
  * Initialize your data structure here.
  * @param {number} size
  */
-var MovingAverage = function(size) {
+var MovingAverage = function (size) {
   this.values = [];
   this.size = size;
 };
@@ -11,7 +11,7 @@ var MovingAverage = function(size) {
  * @param {number} val
  * @return {number}
  */
-MovingAverage.prototype.next = function(val) {
+MovingAverage.prototype.next = function (val) {
   this.values.push(val);
 
   if (this.values.length > this.size) {

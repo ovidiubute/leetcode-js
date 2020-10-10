@@ -3,7 +3,7 @@
  * @param {string} S
  * @return {number}
  */
-var numJewelsInStones = function(J, S) {
+var numJewelsInStones = function (J, S) {
   const jewels = new Set(J.split(""));
   let count = 0;
 

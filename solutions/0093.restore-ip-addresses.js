@@ -2,8 +2,8 @@
  * @param {string} s
  * @return {string[]}
  */
-var restoreIpAddresses = function(s) {
-  const isRangeValid = function(s) {
+var restoreIpAddresses = function (s) {
+  const isRangeValid = function (s) {
     if (!s.length || (s.length > 1 && s.charAt(0) === "0")) {
       return false;
     }

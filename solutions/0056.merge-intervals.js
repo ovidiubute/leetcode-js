@@ -9,7 +9,7 @@
  * @param {Interval[]} intervals
  * @return {Interval[]}
  */
-var merge = function(intervals) {
+var merge = function (intervals) {
   if (intervals.length <= 1) {
     return intervals;
   }

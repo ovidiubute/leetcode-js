@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var firstMissingPositive = function(nums) {
+var firstMissingPositive = function (nums) {
   const seen = {};
 
   let n = 1;

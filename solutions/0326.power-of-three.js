@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {boolean}
  */
-var isPowerOfThree = function(n) {
+var isPowerOfThree = function (n) {
   if (n === 1) {
     return true;
   }

@@ -2,7 +2,7 @@
  * @param {number[]} arr
  * @return {void} Do not return anything, modify arr in-place instead.
  */
-var duplicateZeros = function(arr) {
+var duplicateZeros = function (arr) {
   const indexes = [];
   const n = arr.length;
 

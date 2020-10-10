@@ -2,7 +2,7 @@
  * @param {number[]} A
  * @return {number}
  */
-var fixedPoint = function(A) {
+var fixedPoint = function (A) {
   for (let i = 0; i < A.length; i++) {
     if (A[i] === i) return i;
   }

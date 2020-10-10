@@ -9,14 +9,14 @@
  * @param {Node} root
  * @return {number[]}
  */
-var preorder = function(root) {
+var preorder = function (root) {
   const out = [];
   pre(root, out);
 
   return out;
 };
 
-var pre = function(root, out) {
+var pre = function (root, out) {
   if (root === null) {
     return null;
   }

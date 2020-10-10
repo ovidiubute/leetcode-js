@@ -5,13 +5,13 @@
  * @param {number} maxDistance
  * @return {number[]}
  */
-var filterRestaurants = function(
+var filterRestaurants = function (
   restaurants,
   veganFriendly,
   maxPrice,
   maxDistance
 ) {
-  const rests = restaurants.filter(r => {
+  const rests = restaurants.filter((r) => {
     return (!veganFriendly || r[2]) && r[3] <= maxPrice && r[4] <= maxDistance;
   });
 
@@ -31,5 +31,5 @@ var filterRestaurants = function(
     return 0;
   });
 
-  return rests.map(r => r[0]);
+  return rests.map((r) => r[0]);
 };

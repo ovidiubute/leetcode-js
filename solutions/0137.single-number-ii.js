@@ -5,7 +5,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var singleNumber = function(nums) {
+var singleNumber = function (nums) {
   const freq = {};
 
   for (let n of nums) {

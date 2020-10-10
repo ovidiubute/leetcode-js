@@ -9,7 +9,7 @@
  * @param {TreeNode} root
  * @return {TreeNode}
  */
-var invertTree = function(root) {
+var invertTree = function (root) {
   if (root === null) {
     return null;
   }

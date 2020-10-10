@@ -2,7 +2,7 @@
  * @param {number} num
  * @return {boolean}
  */
-var isUgly = function(num) {
+var isUgly = function (num) {
   if (num === 0) {
     return false;
   }

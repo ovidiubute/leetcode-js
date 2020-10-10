@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string[][]}
  */
-var partition = function(s) {
+var partition = function (s) {
   const result = [];
 
   partitionAt(s, 0, "", result);
@@ -10,7 +10,7 @@ var partition = function(s) {
   return result;
 };
 
-const partitionAt = function(s, offset, prefix, result) {
+const partitionAt = function (s, offset, prefix, result) {
   if (s.length <= offset) {
     result.push(prefix.split(",").slice(1));
     return;
@@ -24,7 +24,7 @@ const partitionAt = function(s, offset, prefix, result) {
   }
 };
 
-const isPalindrome = function(s, start, end) {
+const isPalindrome = function (s, start, end) {
   while (start < end) {
     if (s.charAt(start++) !== s.charAt(end--)) {
       return false;

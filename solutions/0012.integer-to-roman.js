@@ -2,7 +2,7 @@
  * @param {number} num
  * @return {string}
  */
-var intToRoman = function(input) {
+var intToRoman = function (input) {
   if (input >= 1000) {
     return (
       thousandsToRoman(Math.floor(input / 1000)) +
@@ -18,7 +18,7 @@ var intToRoman = function(input) {
   return digitsToRoman(input);
 };
 
-var digitsToRoman = function(input) {
+var digitsToRoman = function (input) {
   if (input <= 3) {
     return rangeToRoman(input % 4, "I");
   } else if (input === 4) {
@@ -48,7 +48,7 @@ var digitsToRoman = function(input) {
   return "XC" + digitsToRoman(input % 10);
 };
 
-var hundredsToRoman = function(input) {
+var hundredsToRoman = function (input) {
   if (input <= 3) {
     // 100 - 300
     return rangeToRoman(input % 4, "C");
@@ -64,17 +64,17 @@ var hundredsToRoman = function(input) {
   return "CM";
 };
 
-var thousandsToRoman = function(input) {
+var thousandsToRoman = function (input) {
   // 1000 - 3000
   return rangeToRoman(input % 4, "M");
 };
 
-var range = function(top) {
+var range = function (top) {
   return Array.from({ length: top });
 };
 
-var rangeToRoman = function(input, char) {
+var rangeToRoman = function (input, char) {
   return range(input)
-    .map(_ => char)
+    .map((_) => char)
     .join("");
 };

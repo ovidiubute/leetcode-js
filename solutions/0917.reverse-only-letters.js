@@ -2,9 +2,9 @@
  * @param {string} S
  * @return {string}
  */
-var reverseOnlyLetters = function(S) {
+var reverseOnlyLetters = function (S) {
   const stack = [];
-  const out = new Array(S.length).map(x => undefined);
+  const out = new Array(S.length).map((x) => undefined);
 
   for (let i = 0; i < S.length; i++) {
     const c = S.charAt(i);
@@ -24,7 +24,7 @@ var reverseOnlyLetters = function(S) {
   return out.join("");
 };
 
-var isLetter = function(a) {
+var isLetter = function (a) {
   const c = a.charCodeAt(0);
 
   return (c >= 65 && c <= 90) || (c >= 97 && c <= 122);

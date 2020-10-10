@@ -3,7 +3,7 @@
  * @param {string} sentence
  * @return {string}
  */
-var replaceWords = function(dict, sentence) {
+var replaceWords = function (dict, sentence) {
   const rootset = new Set(dict);
 
   let result = "";

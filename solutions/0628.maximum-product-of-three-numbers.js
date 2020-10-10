@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var maximumProduct = function(nums) {
+var maximumProduct = function (nums) {
   nums.sort((a, b) => {
     return a - b;
   });

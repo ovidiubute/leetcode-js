@@ -2,7 +2,7 @@
  * @param {string} S
  * @return {string}
  */
-var removeVowels = function(S) {
+var removeVowels = function (S) {
   let result = "";
 
   for (let i = 0; i < S.length; i++) {

@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-var canJump = function(nums) {
+var canJump = function (nums) {
   const memo = new Array(nums.length);
 
   for (let i = 0; i < memo.length; i++) {

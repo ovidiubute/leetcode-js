@@ -9,7 +9,7 @@
  * @param {number[]} nums
  * @return {TreeNode}
  */
-var sortedArrayToBST = function(nums, start, end) {
+var sortedArrayToBST = function (nums, start, end) {
   if (start === undefined && end === undefined) {
     start = 0;
     end = nums.length - 1;

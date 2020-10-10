@@ -9,7 +9,7 @@
  * @param {TreeNode} root
  * @return {boolean}
  */
-var isUnivalTree = function(root) {
+var isUnivalTree = function (root) {
   if (root === null) {
     return true;
   }
@@ -19,7 +19,7 @@ var isUnivalTree = function(root) {
   return helper(root, v);
 };
 
-var helper = function(node, value) {
+var helper = function (node, value) {
   if (node === null) {
     return true;
   }

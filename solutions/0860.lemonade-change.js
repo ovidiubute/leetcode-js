@@ -2,7 +2,7 @@
  * @param {number[]} bills
  * @return {boolean}
  */
-var lemonadeChange = function(bills) {
+var lemonadeChange = function (bills) {
   let fives = 0,
     tens = 0;
   for (let i = 0; i < bills.length; i++) {

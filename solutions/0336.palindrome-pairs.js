@@ -2,7 +2,7 @@
  * @param {string[]} words
  * @return {number[][]}
  */
-var palindromePairs = function(words) {
+var palindromePairs = function (words) {
   const results = [];
 
   for (let i = 0; i < words.length; i++) {

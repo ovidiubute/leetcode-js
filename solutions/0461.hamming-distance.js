@@ -3,8 +3,8 @@
  * @param {number} y
  * @return {number}
  */
-var hammingDistance = function(x, y) {
-  var hammingWeight = function(n) {
+var hammingDistance = function (x, y) {
+  var hammingWeight = function (n) {
     let mask = 1;
     let count = 0;
     while (mask > 0) {

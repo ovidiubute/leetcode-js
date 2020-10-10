@@ -5,14 +5,14 @@
  * @param {number[]} p4
  * @return {boolean}
  */
-var validSquare = function(p1, p2, p3, p4) {
-  var dist = function(p1, p2) {
+var validSquare = function (p1, p2, p3, p4) {
+  var dist = function (p1, p2) {
     return (
       (p2[1] - p1[1]) * (p2[1] - p1[1]) + (p2[0] - p1[0]) * (p2[0] - p1[0])
     );
   };
 
-  var check = function(p1, p2, p3, p4) {
+  var check = function (p1, p2, p3, p4) {
     return (
       dist(p1, p2) > 0 &&
       dist(p1, p2) === dist(p2, p3) &&

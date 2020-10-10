@@ -3,7 +3,7 @@
  * @param {number} n
  * @return {boolean}
  */
-var canPlaceFlowers = function(flowerbed, n) {
+var canPlaceFlowers = function (flowerbed, n) {
   let i = 0;
   let count = 0;
 

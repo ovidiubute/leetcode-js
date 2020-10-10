@@ -1,7 +1,7 @@
 /**
  * Initialize your data structure here.
  */
-var TwoSum = function() {
+var TwoSum = function () {
   this.numbers = [];
   this.sums = new Map();
 };
@@ -11,7 +11,7 @@ var TwoSum = function() {
  * @param {number} number
  * @return {void}
  */
-TwoSum.prototype.add = function(number) {
+TwoSum.prototype.add = function (number) {
   for (let i = 0; i < this.numbers.length; i++) {
     const s = this.numbers[i] + number;
 
@@ -26,7 +26,7 @@ TwoSum.prototype.add = function(number) {
  * @param {number} value
  * @return {boolean}
  */
-TwoSum.prototype.find = function(value) {
+TwoSum.prototype.find = function (value) {
   return this.sums.has(value) ? this.sums.get(value) : false;
 };
 

@@ -3,7 +3,7 @@
  * @param {number[]} nums2
  * @return {number}
  */
-var findMedianSortedArrays = function(nums1, nums2) {
+var findMedianSortedArrays = function (nums1, nums2) {
   let i = nums1.length - 1;
   let j = nums2.length - 1;
   let k = nums1.length + nums2.length - 1;

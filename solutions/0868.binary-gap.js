@@ -2,7 +2,7 @@
  * @param {number} N
  * @return {number}
  */
-var binaryGap = function(N) {
+var binaryGap = function (N) {
   const binaryN = N.toString(2);
 
   let prevIndex = -1;

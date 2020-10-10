@@ -2,7 +2,7 @@
  * @param {number} num
  * @return {boolean}
  */
-var isPerfectSquare = function(num) {
+var isPerfectSquare = function (num) {
   let start = 0;
   let end = num;
 

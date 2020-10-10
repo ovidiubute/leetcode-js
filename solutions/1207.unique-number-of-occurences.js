@@ -2,7 +2,7 @@
  * @param {number[]} arr
  * @return {boolean}
  */
-var uniqueOccurrences = function(arr) {
+var uniqueOccurrences = function (arr) {
   const freq = new Map();
 
   for (let i = 0; i < arr.length; i++) {

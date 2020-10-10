@@ -2,7 +2,7 @@
  * @param {number} N
  * @return {number}
  */
-var fib = function(N) {
+var fib = function (N) {
   if (N === 0) {
     return 0;
   }

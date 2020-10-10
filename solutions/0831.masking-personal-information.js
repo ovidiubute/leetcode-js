@@ -2,13 +2,13 @@
  * @param {string} S
  * @return {string}
  */
-var maskPII = function(S) {
+var maskPII = function (S) {
   if (S.indexOf("@") !== -1) return maskEmail(S);
 
   return maskPhone(S);
 };
 
-var maskEmail = function(S) {
+var maskEmail = function (S) {
   let emailParts = S.split("@");
   let names = [emailParts[0], ...emailParts[1].split(".")];
 
@@ -20,7 +20,7 @@ var maskEmail = function(S) {
   return names[0] + "@" + names[1].toLowerCase() + "." + names[2].toLowerCase();
 };
 
-var maskPhone = function(S) {
+var maskPhone = function (S) {
   let s = S.trim();
 
   let sign;

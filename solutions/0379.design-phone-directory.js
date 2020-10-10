@@ -3,13 +3,13 @@
         @param maxNumbers - The maximum numbers that can be stored in the phone directory.
  * @param {number} maxNumbers
  */
-var PhoneDirectory = function(maxNumbers) {
+var PhoneDirectory = function (maxNumbers) {
   this.dir = new Array(maxNumbers);
 
   for (let i = 0; i < this.dir.length; i++) {
     this.dir[i] = {
       no: i,
-      free: true
+      free: true,
     };
   }
 };
@@ -19,7 +19,7 @@ var PhoneDirectory = function(maxNumbers) {
         @return - Return an available number. Return -1 if none is available.
  * @return {number}
  */
-PhoneDirectory.prototype.get = function() {
+PhoneDirectory.prototype.get = function () {
   for (let i = 0; i < this.dir.length; i++) {
     if (this.dir[i].free) {
       this.dir[i].free = false;
@@ -35,7 +35,7 @@ PhoneDirectory.prototype.get = function() {
  * @param {number} number
  * @return {boolean}
  */
-PhoneDirectory.prototype.check = function(number) {
+PhoneDirectory.prototype.check = function (number) {
   if (number > this.dir.length) {
     return false;
   }
@@ -48,7 +48,7 @@ PhoneDirectory.prototype.check = function(number) {
  * @param {number} number
  * @return {void}
  */
-PhoneDirectory.prototype.release = function(number) {
+PhoneDirectory.prototype.release = function (number) {
   this.dir[number].free = true;
 };
 

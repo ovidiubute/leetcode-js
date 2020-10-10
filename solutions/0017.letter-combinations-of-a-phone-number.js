@@ -2,20 +2,20 @@
  * @param {string} digits
  * @return {string[]}
  */
-var letterCombinations = function(digits) {
+var letterCombinations = function (digits) {
   const lettersByDigit = {
-    "2": ["a", "b", "c"],
-    "3": ["d", "e", "f"],
-    "4": ["g", "h", "i"],
-    "5": ["j", "k", "l"],
-    "6": ["m", "n", "o"],
-    "7": ["p", "q", "r", "s"],
-    "8": ["t", "u", "v"],
-    "9": ["w", "x", "y", "z"]
+    2: ["a", "b", "c"],
+    3: ["d", "e", "f"],
+    4: ["g", "h", "i"],
+    5: ["j", "k", "l"],
+    6: ["m", "n", "o"],
+    7: ["p", "q", "r", "s"],
+    8: ["t", "u", "v"],
+    9: ["w", "x", "y", "z"],
   };
   let results = [];
 
-  let combine = function(combination, digits) {
+  let combine = function (combination, digits) {
     if (!digits) {
       results.push(combination);
     } else {

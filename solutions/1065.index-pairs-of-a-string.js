@@ -3,7 +3,7 @@
  * @param {string[]} words
  * @return {number[][]}
  */
-var indexPairs = function(text, words) {
+var indexPairs = function (text, words) {
   const out = [];
 
   for (let i = 0; i < text.length; i++) {

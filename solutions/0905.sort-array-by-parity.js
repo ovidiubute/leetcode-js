@@ -2,7 +2,7 @@
  * @param {number[]} A
  * @return {number[]}
  */
-var sortArrayByParity = function(A) {
+var sortArrayByParity = function (A) {
   const even = [];
   const odd = [];
 

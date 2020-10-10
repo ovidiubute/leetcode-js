@@ -3,7 +3,7 @@
  * @param {string} word
  * @return {boolean}
  */
-var exist = function(board, word) {
+var exist = function (board, word) {
   for (let i = 0; i < board.length; i++) {
     for (let j = 0; j < board[i].length; j++) {
       if (backtrack(board, board.length, board[i].length, i, j, word, 0)) {
@@ -15,7 +15,7 @@ var exist = function(board, word) {
   return false;
 };
 
-var backtrack = function(board, rows, cols, row, col, word, index) {
+var backtrack = function (board, rows, cols, row, col, word, index) {
   if (index >= word.length) {
     return true;
   }

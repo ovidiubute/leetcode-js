@@ -3,7 +3,7 @@
  * @param {string} S
  * @return {number[]}
  */
-var numberOfLines = function(widths, S) {
+var numberOfLines = function (widths, S) {
   let lines = 1;
   let lineWidth = 0;
   for (let i = 0; i < S.length; i++) {

@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string}
  */
-var reverseVowels = function(s) {
+var reverseVowels = function (s) {
   let i = 0,
     j = s.length - 1,
     out = [...s],

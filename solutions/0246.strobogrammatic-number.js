@@ -2,7 +2,7 @@
  * @param {string} num
  * @return {boolean}
  */
-var isStrobogrammatic = function(num) {
+var isStrobogrammatic = function (num) {
   const strob = {
     0: 0,
     1: 1,
@@ -13,7 +13,7 @@ var isStrobogrammatic = function(num) {
     6: 9,
     7: -1,
     8: 8,
-    9: 6
+    9: 6,
   };
 
   let i = 0,

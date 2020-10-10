@@ -2,8 +2,8 @@
  * @param {string} s
  * @return {string}
  */
-var reverseWords = function(s) {
-  var reverseWord = function(w) {
+var reverseWords = function (s) {
+  var reverseWord = function (w) {
     const chars = w.split("");
     let start = 0;
     let end = chars.length;
@@ -19,8 +19,5 @@ var reverseWords = function(s) {
     return chars.join("");
   };
 
-  return s
-    .split(" ")
-    .map(reverseWord)
-    .join(" ");
+  return s.split(" ").map(reverseWord).join(" ");
 };

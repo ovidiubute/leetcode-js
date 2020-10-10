@@ -3,8 +3,8 @@
  * @param {number} k
  * @return {void} Do not return anything, modify nums in-place instead.
  */
-var rotate = function(nums, k) {
-  var reverse = function(nums, start, end) {
+var rotate = function (nums, k) {
+  var reverse = function (nums, start, end) {
     while (start < end) {
       let temp = nums[start];
       nums[start] = nums[end];

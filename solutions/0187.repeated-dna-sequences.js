@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string[]}
  */
-var findRepeatedDnaSequences = function(s) {
+var findRepeatedDnaSequences = function (s) {
   const frequency = {};
   for (let i = 0; i < s.length; i++) {
     const sequence = s.slice(i, i + 10);
@@ -13,5 +13,5 @@ var findRepeatedDnaSequences = function(s) {
     }
   }
 
-  return Object.keys(frequency).filter(sequence => frequency[sequence] > 1);
+  return Object.keys(frequency).filter((sequence) => frequency[sequence] > 1);
 };

@@ -9,7 +9,7 @@
  * @param {Node} root
  * @return {number[]}
  */
-var postorder = function(root) {
+var postorder = function (root) {
   const results = [];
   postorderHelper(root, results);
   root && results.push(root.val);
@@ -17,7 +17,7 @@ var postorder = function(root) {
   return results;
 };
 
-var postorderHelper = function(root, results) {
+var postorderHelper = function (root, results) {
   if (root === null) {
     return null;
   }

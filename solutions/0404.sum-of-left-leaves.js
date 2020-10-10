@@ -9,7 +9,7 @@
  * @param {TreeNode} root
  * @return {number}
  */
-var sumOfLeftLeaves = function(root) {
+var sumOfLeftLeaves = function (root) {
   if (root === null) {
     return 0;
   }
@@ -21,7 +21,7 @@ var sumOfLeftLeaves = function(root) {
   return s.total;
 };
 
-var sum = function(node, s) {
+var sum = function (node, s) {
   if (node === null) {
     return 0;
   }
@@ -34,6 +34,6 @@ var sum = function(node, s) {
   sum(node.right, s);
 };
 
-var isLeaf = function(node) {
+var isLeaf = function (node) {
   return node !== null && node.left === null && node.right === null;
 };
