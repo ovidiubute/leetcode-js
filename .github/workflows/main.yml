@@ -1,0 +1,15 @@
+name: Push commit
+on: push
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Update badge
+        run: node update-badge.js
+      - name: Commit badge
+        run: |
+          git config --global user.name 'AutoBot'
+          git config --global user.email 'AutoBot@users.noreply.github.com'
+          git commit -am "Automated badge update."
+          git push
