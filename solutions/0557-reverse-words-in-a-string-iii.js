@@ -3,21 +3,27 @@
  * @return {string}
  */
 var reverseWords = function (s) {
-  var reverseWord = function (w) {
-    const chars = w.split("");
-    let start = 0;
-    let end = chars.length;
-    while (end >= start) {
-      let swap = chars[start];
-      chars[start] = chars[end];
-      chars[end] = swap;
+  const stack = [];
+  let rev = "";
 
-      end--;
-      start++;
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+
+    if (c !== " ") {
+      stack.push(c);
+      continue;
     }
 
-    return chars.join("");
-  };
+    while (stack.length) {
+      rev += stack.pop();
+    }
 
-  return s.split(" ").map(reverseWord).join(" ");
+    rev += " ";
+  }
+
+  while (stack.length) {
+    rev += stack.pop();
+  }
+
+  return rev;
 };
