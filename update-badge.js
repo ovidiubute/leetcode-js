@@ -1,12 +1,10 @@
 // Update this over time from leetcode.com
-const TOTAL_PROBLEM_COUNT = 1468;
+const TOTAL_PROBLEM_COUNT = 1501;
 
 // Count how many solutions we have so far
 const countSolutionsScript = "ls solutions | wc -l";
 const solutionCount = Number(
-  require("child_process")
-    .execSync(countSolutionsScript)
-    .toString()
+  require("child_process").execSync(countSolutionsScript).toString()
 );
 
 // Compute our progress
@@ -21,16 +19,16 @@ const badge = {
   label: "progress",
   message: `${progress}%`,
   color,
-  namedLogo: "leetcode"
+  namedLogo: "leetcode",
 };
 
 // Run output through prettier
 const prettier = require("prettier");
 const output = prettier.format(JSON.stringify(badge), {
-  parser: "json"
+  parser: "json",
 });
 
 // Write shields.io badge data to disk
 require("fs").writeFileSync("./.shieldsio.json", output, {
-  flag: "w"
+  flag: "w",
 });
