@@ -5,6 +5,10 @@
  */
 var wordBreak = function (s, wordDict) {
   const memo = {};
+  const dict = {};
+  for (let i = 0; i < wordDict.length; i++) {
+    dict[wordDict[i]] = 1;
+  }
 
   let helper = function (start) {
     if (start === s.length) {
@@ -17,7 +21,7 @@ var wordBreak = function (s, wordDict) {
 
     for (let end = start + 1; end <= s.length; end++) {
       const slice = s.slice(start, end);
-      if (wordDict.includes(slice) && helper(end)) {
+      if (dict[slice] && helper(end)) {
         memo[start] = true;
         return true;
       }
