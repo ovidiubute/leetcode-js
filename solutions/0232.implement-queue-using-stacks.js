@@ -2,8 +2,8 @@
  * Initialize your data structure here.
  */
 var MyQueue = function () {
-  this.mainStack = [];
-  this.reverseStack = [];
+  this.newStack = [];
+  this.oldStack = [];
 };
 
 /**
@@ -12,7 +12,7 @@ var MyQueue = function () {
  * @return {void}
  */
 MyQueue.prototype.push = function (x) {
-  this.mainStack.push(x);
+  this.newStack.push(x);
 };
 
 /**
@@ -20,17 +20,8 @@ MyQueue.prototype.push = function (x) {
  * @return {number}
  */
 MyQueue.prototype.pop = function () {
-  while (this.mainStack.length) {
-    this.reverseStack.push(this.mainStack.pop());
-  }
-
-  const x = this.reverseStack.pop();
-
-  while (this.reverseStack.length) {
-    this.mainStack.push(this.reverseStack.pop());
-  }
-
-  return x;
+  this._archive();
+  return this.oldStack.pop();
 };
 
 /**
@@ -38,18 +29,21 @@ MyQueue.prototype.pop = function () {
  * @return {number}
  */
 MyQueue.prototype.peek = function () {
-  while (this.mainStack.length) {
-    this.reverseStack.push(this.mainStack.pop());
-  }
-
-  const x = this.reverseStack.pop();
-  this.reverseStack.push(x);
-
-  while (this.reverseStack.length) {
-    this.mainStack.push(this.reverseStack.pop());
-  }
+  this._archive();
+  const x = this.oldStack.pop();
+  this.oldStack.push(x);
 
   return x;
+};
+
+MyQueue.prototype._archive = function () {
+  if (this.oldStack.length) {
+    return;
+  }
+
+  while (this.newStack.length) {
+    this.oldStack.push(this.newStack.pop());
+  }
 };
 
 /**
@@ -57,7 +51,7 @@ MyQueue.prototype.peek = function () {
  * @return {boolean}
  */
 MyQueue.prototype.empty = function () {
-  return !this.mainStack.length;
+  return !this.newStack.length && !this.oldStack.length;
 };
 
 /**
