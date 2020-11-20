@@ -15,5 +15,4 @@ jobs:
         run: |
           git config --global user.name 'AutoBot'
           git config --global user.email 'AutoBot@users.noreply.github.com'
-          git commit -am "Automated badge update."
-          git push
+          git diff-index --quiet HEAD || git commit -am "Automated badge update." && git push
