@@ -3,17 +3,14 @@
  * @return {number}
  */
 var climbStairs = function (n) {
-  let memo = [];
-  return steps(0, n, memo);
-};
+  const dp = [];
 
-var steps = function (i, n, memo) {
-  if (i > n) return 0;
+  dp[0] = 1;
+  dp[1] = 1;
 
-  if (i === n) return 1;
+  for (let i = 2; i <= n; i++) {
+    dp[i] = dp[i - 1] + dp[i - 2];
+  }
 
-  if (memo[i] > 0) return memo[i];
-
-  memo[i] = steps(i + 1, n, memo) + steps(i + 2, n, memo);
-  return memo[i];
+  return dp[n];
 };
