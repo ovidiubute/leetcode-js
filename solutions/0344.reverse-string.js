@@ -1,34 +1,17 @@
 /**
- * @param {string} s
- * @return {string}
+ * @param {character[]} s
+ * @return {void} Do not return anything, modify s in-place instead.
  */
 var reverseString = function (s) {
-  // This is correct, but on large inputs you exceed
-  // the maximum call stack size, so it was not accepted.
-  // if (s === '') {
-  //   return '';
-  // }
-  // return reverseString(s.substr(1)) + s.charAt(0);
+  let start = 0;
+  let end = s.length - 1;
 
-  // Accepted submission, but this is cheating :-)
-  // return s
-  //   .split("")
-  //   .reverse()
-  //   .join("");
+  while (start < end) {
+    swap = s[start];
+    s[start] = s[end];
+    s[end] = swap;
 
-  // Accepted submission without (too many) JS shenanigans
-  var i = 0;
-  var j = s.length - 1;
-  var mid = s.length % 2 === 1 ? Math.floor(s.length / 2) : s.length / 2 - 1;
-  let arr = s.split(""); // Easier to work with char arrays
-  while (i <= mid && j >= mid) {
-    var swap = arr[i];
-    arr[i] = arr[j];
-    arr[j] = swap;
-
-    i++;
-    j--;
+    end--;
+    start++;
   }
-
-  return arr.join("");
 };
