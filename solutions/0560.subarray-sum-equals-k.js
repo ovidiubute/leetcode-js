@@ -5,21 +5,24 @@
  */
 var subarraySum = function (nums, k) {
   let count = 0;
-  let sum = 0;
+  let sums = {};
+  let s = 0;
 
-  const map = {};
-  map[0] = 1;
   for (let i = 0; i < nums.length; i++) {
-    sum += nums[i];
+    s += nums[i];
 
-    if (map[sum - k]) {
-      count += map[sum - k];
+    if (s === k) {
+      count++;
     }
 
-    if (!map[sum]) {
-      map[sum] = 1;
+    if (sums[s - k] !== undefined) {
+      count += sums[s - k];
+    }
+
+    if (!sums[s]) {
+      sums[s] = 1;
     } else {
-      map[sum]++;
+      sums[s]++;
     }
   }
 
