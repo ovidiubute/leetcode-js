@@ -1,8 +1,9 @@
 /**
  * Definition for a binary tree node.
- * function TreeNode(val) {
- *     this.val = val;
- *     this.left = this.right = null;
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
  * }
  */
 /**
@@ -11,14 +12,29 @@
  * @return {boolean}
  */
 var hasPathSum = function (root, sum) {
-  if (root === null) {
-    return false;
-  }
+  let isPossible = false;
 
-  sum -= root.val;
-  if (root.left === null && root.right === null) {
-    return sum === 0;
-  }
+  var dfs = function (node, s) {
+    if (node === null) {
+      return;
+    }
 
-  return hasPathSum(root.left, sum) || hasPathSum(root.right, sum);
+    s -= node.val;
+
+    if (!node.left && !node.right) {
+      if (s === 0) {
+        isPossible = true;
+        return;
+      } else if (s < 0) {
+        return;
+      }
+    } else {
+      dfs(node.left, s);
+      dfs(node.right, s);
+    }
+  };
+
+  dfs(root, sum);
+
+  return isPossible;
 };
