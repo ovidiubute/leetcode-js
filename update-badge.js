@@ -1,5 +1,5 @@
 // Update this over time from leetcode.com
-const TOTAL_PROBLEM_COUNT = 1502;
+const TOTAL_PROBLEM_COUNT = 1515;
 
 // Count how many solutions we have so far
 const countSolutionsScript = "ls solutions | wc -l";
