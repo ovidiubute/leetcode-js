@@ -18,7 +18,7 @@ var sumNumbers = function (root) {
       return;
     }
 
-    accumulator += node.val;
+    accumulator = accumulator * 10 + node.val;
     if (!node.left && !node.right) {
       sum += parseInt(accumulator);
     } else {
@@ -27,7 +27,7 @@ var sumNumbers = function (root) {
     }
   };
 
-  dfs(root, "");
+  dfs(root, 0);
 
   return sum;
 };
