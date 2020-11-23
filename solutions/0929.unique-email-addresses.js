@@ -3,16 +3,23 @@
  * @return {number}
  */
 var numUniqueEmails = function (emails) {
-  const uniqueEmails = new Set();
+  const db = {};
 
   for (let i = 0; i < emails.length; i++) {
-    const [local, domain] = emails[i].split("@");
+    let [user, domain] = emails[i].split("@");
+    user = user.replace(/[.]/gi, "");
+    let [u, _] = user.split("+");
+    u += "@" + domain;
 
-    const noDots = local.replace(/[.]*/gi, "");
-    const noFilter = noDots.split("+")[0];
-
-    uniqueEmails.add(noFilter + "@" + domain);
+    if (!db[u]) {
+      db[u] = 1;
+    }
   }
 
-  return uniqueEmails.size;
+  let s = 0;
+  for (let v of Object.values(db)) {
+    s += v;
+  }
+
+  return s;
 };
