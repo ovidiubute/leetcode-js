@@ -3,31 +3,29 @@
  * @return {string}
  */
 var longestCommonPrefix = function (strs) {
-  if (strs.length === 0) {
+  if (!strs.length) {
     return "";
   }
 
-  if (strs.length === 1) {
-    return strs[0];
-  }
-
-  prefix = strs[0];
+  let prefix = strs[0];
   for (let i = 1; i < strs.length; i++) {
-    prefix = commonPrefix(prefix, strs[i]);
+    prefix = LCP(prefix, strs[i]);
   }
 
   return prefix;
 };
 
-var commonPrefix = function (prefix, str) {
-  let p = prefix;
-  while (p !== "") {
-    if (str.startsWith(p)) {
-      return p;
+var LCP = function (s1, s2) {
+  let prefix = "";
+
+  let start = 0;
+  for (let i = start, j = start; i < s1.length && j < s2.length; i++, j++) {
+    if (s1[i] !== s2[j]) {
+      break;
     }
 
-    p = p.substr(0, p.length - 1);
+    prefix += s1[i];
   }
 
-  return p;
+  return prefix;
 };
