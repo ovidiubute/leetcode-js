@@ -3,19 +3,22 @@
  * @return {number}
  */
 var lengthOfLongestSubstring = function (s) {
-  let result = 0;
-  let i = 0;
-  let j = 0;
-  let seen = new Set();
+  let set = new Set();
+  let i = 0,
+    j = 0,
+    max = 0,
+    n = s.length;
 
-  while (i < s.length && j < s.length) {
-    if (!seen.has(s.charAt(j))) {
-      seen.add(s.charAt(j++));
-      result = Math.max(result, j - i);
+  while (i < n && j < n) {
+    if (set.has(s[j])) {
+      set.delete(s[i]);
+      i++;
     } else {
-      seen.delete(s.charAt(i++));
+      set.add(s[j]);
+      max = Math.max(max, j - i + 1);
+      j++;
     }
   }
 
-  return result;
+  return max;
 };
