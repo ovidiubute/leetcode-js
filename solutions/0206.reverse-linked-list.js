@@ -1,8 +1,8 @@
 /**
  * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
  * }
  */
 /**
@@ -10,28 +10,15 @@
  * @return {ListNode}
  */
 var reverseList = function (head) {
-  const stack = [];
+  let prev = null;
+  let curr = head;
 
-  if (head === null) {
-    return head;
+  while (curr) {
+    let swap = curr.next;
+    curr.next = prev;
+    prev = curr;
+    curr = swap;
   }
 
-  let p = head;
-
-  while (p) {
-    stack.push(p);
-    p = p.next;
-  }
-
-  let item = stack.pop();
-  let h = item;
-  while (stack.length) {
-    const nextItem = stack.pop();
-    item.next = nextItem;
-    item = item.next;
-  }
-
-  item.next = null;
-
-  return h;
+  return prev;
 };
