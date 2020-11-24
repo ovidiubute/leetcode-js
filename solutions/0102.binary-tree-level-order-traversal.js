@@ -13,7 +13,7 @@
 var levelOrder = function (root) {
   let solution = [];
 
-  var bfs = function (node, level) {
+  var dfs = function (node, level) {
     if (!node) {
       return;
     }
@@ -24,14 +24,14 @@ var levelOrder = function (root) {
 
     solution[level].push(node.val);
     if (node.left) {
-      bfs(node.left, level + 1);
+      dfs(node.left, level + 1);
     }
     if (node.right) {
-      bfs(node.right, level + 1);
+      dfs(node.right, level + 1);
     }
   };
 
-  bfs(root, 0);
+  dfs(root, 0);
 
   return solution;
 };
