@@ -6,23 +6,30 @@
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
 var merge = function (nums1, m, nums2, n) {
-  if (nums1 === null || nums2 === null || n === 0) {
-    return;
-  }
+  const nums1Copy = Array.from(nums1);
+  let i = 0,
+    j = 0,
+    p = 0;
 
-  let i = m - 1;
-  let j = n - 1;
-  let k = m + n - 1;
-
-  while (i >= 0 && j >= 0) {
-    if (nums1[i] >= nums2[j]) {
-      nums1[k--] = nums1[i--];
+  while (i < m && j < n) {
+    if (nums1Copy[i] < nums2[j]) {
+      nums1[p] = nums1Copy[i];
+      i++;
     } else {
-      nums1[k--] = nums2[j--];
+      nums1[p] = nums2[j];
+      j++;
     }
+
+    p++;
   }
 
-  while (j >= 0) {
-    nums1[k--] = nums2[j--];
+  if (i === m) {
+    for (let k = j; k < n; k++) {
+      nums1[p++] = nums2[k];
+    }
+  } else if (j === n) {
+    for (let k = i; k < m; k++) {
+      nums1[p++] = nums1Copy[k];
+    }
   }
 };
