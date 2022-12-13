@@ -4,21 +4,25 @@
  * @return {boolean}
  */
 var searchMatrix = function (matrix, target) {
-  let arr = [];
-  for (let i = 0; i < matrix.length; i++) {
-    arr = arr.concat(matrix[i]);
+  const m = matrix.length;
+
+  if (m === 0) {
+    return false;
   }
 
+  const n = matrix[0].length;
   let lo = 0,
-    hi = arr.length - 1;
+    hi = n * m - 1;
+
   while (lo <= hi) {
     const mid = Math.floor((lo + hi) / 2);
 
-    if (arr[mid] === target) {
-      return true;
-    }
+    let i = Math.floor(mid / n),
+      j = mid % n;
 
-    if (arr[mid] > target) {
+    if (matrix[i][j] === target) {
+      return true;
+    } else if (matrix[i][j] > target) {
       hi = mid - 1;
     } else {
       lo = mid + 1;
