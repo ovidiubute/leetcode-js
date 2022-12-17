@@ -1,11 +1,10 @@
 {
   "name": "leetcode-js",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Accepted solutions to leetcode.com algorithm problems.",
-  "main": "index.js",
   "repository": "git@github.com:ovidiubute/leetcode-js.git",
   "author": "Ovidiu Bute <ovidiu.bute@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "PUBLIC DOMAIN",
   "private": true,
   "devDependencies": {
     "prettier": "2.8.1"
