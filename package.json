@@ -4,7 +4,7 @@
   "description": "Accepted solutions to leetcode.com algorithm problems.",
   "repository": "git@github.com:ovidiubute/leetcode-js.git",
   "author": "Ovidiu Bute <ovidiu.bute@gmail.com>",
-  "license": "PUBLIC DOMAIN",
+  "license": "UNLICENSE",
   "private": true,
   "devDependencies": {
     "prettier": "2.8.1"
