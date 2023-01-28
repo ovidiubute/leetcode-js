@@ -3,16 +3,12 @@
  * @return {number}
  */
 var missingNumber = function (nums) {
-  var min = 0;
-  var s = 0;
-  for (var i = 0; i < nums.length; i++) {
-    if (nums[i] < min) {
-      min = nums[i];
-    }
+  let s = 0;
+  let n = nums.length;
 
-    s += nums[i];
+  for (let x of nums) {
+    s += x;
   }
 
-  var sum = ((2 * min + nums.length) * (nums.length + 1)) / 2;
-  return sum - s;
+  return (n * (n + 1)) / 2 - s;
 };
