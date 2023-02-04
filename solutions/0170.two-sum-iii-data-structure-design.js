@@ -20,7 +20,7 @@ TwoSum.prototype.add = function (number) {
  */
 TwoSum.prototype.find = function (value) {
   const keys = this.map.keys();
-  for (key of keys) {
+  for (let key of keys) {
     const current = this.map.get(key);
     const complement = value - key;
 
