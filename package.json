@@ -7,6 +7,6 @@
   "license": "UNLICENSE",
   "private": true,
   "devDependencies": {
-    "prettier": "2.8.3"
+    "prettier": "2.8.6"
   }
 }
